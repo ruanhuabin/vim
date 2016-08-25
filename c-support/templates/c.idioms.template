@@ -25,6 +25,9 @@ $%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #include <string.h>
 #include <math.h>
 #include <time.h>
+
+
+
 int main ( int argc, char *argv[] )
 { <CURSOR>
 <SPLIT> return EXIT_SUCCESS;
