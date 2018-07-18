@@ -1,3 +1,5 @@
+autocmd VimEnter * wincmd l
+
 filetype on
 filetype plugin on
 filetype indent on
@@ -15,13 +17,8 @@ syntax on
 "noremap <F5> :w<cr>
 let mapleader = "\\"
 "nmap <leader>w :w!<cr>
-nmap C :cclose<cr>
-map! <F2> <Esc>:w<CR>a
-nmap <F2> <Esc>:w<CR>
-vmap <F2> <Esc>:w<CR>
-nmap B :call C_Compile()<CR>:call C_HlMessage()<CR> 
-nmap R :call C_Run()<CR>
 autocmd! bufwritepost .vimrc source ~/.vimrc  
+
 if has("autocmd")
 	 autocmd BufRead *.txt set tw=78
 	 autocmd BufReadPost *
@@ -86,7 +83,7 @@ set tags+=~/.vim/tags/javatags
 map! <leader>3 <Esc>:!./%<CR>
 
 "Mouse enable
-"set mouse=a
+set mouse=a
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " cscope setting
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -130,6 +127,7 @@ let NERDTreeWinSize = 20
 nmap <F7> <ESC>:NERDTreeToggle<CR>
 "let loaded_winmanager = 1 
 let g:winManagerWindowLayout='TagList|FileExplorer,BufExplorer'
+"let g:winManagerWindowLayout='TagList'
 let g:AutoOpenWinManager = 0
  set foldmethod=marker
  colorscheme motus
@@ -233,4 +231,5 @@ let g:EchoFuncKeyNext='<c-j>'
 "let g:C_MapLeader=","
 set fdm=marker
 imap jj <Esc>
-
+nmap <silent> <F2> :WMToggle<CR>
+map! <silent> <F2> <ESC><F2>i
