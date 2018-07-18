@@ -234,4 +234,3 @@ let g:EchoFuncKeyNext='<c-j>'
 set fdm=marker
 imap jj <Esc>
 
-

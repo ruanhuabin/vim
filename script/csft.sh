@@ -7,8 +7,8 @@
 #
 
 #--break-blocks \
-format_cmd="astyle \
---style=bsd \
+format_cmd="$HOME/.vim/script/astyle \
+--style=allman \
 --indent=spaces=4 \
 --indent-switches \
 --indent-col1-comments \
