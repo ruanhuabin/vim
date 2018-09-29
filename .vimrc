@@ -233,3 +233,9 @@ set fdm=marker
 imap jj <Esc>
 nmap <silent> <F2> :WMToggle<CR>
 map! <silent> <F2> <ESC><F2>i
+
+set laststatus=2
+"set autochdir
+set undofile
+set errorbells
+set visualbell
